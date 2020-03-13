@@ -47,7 +47,7 @@ public class JBehaveRunner extends JUnitStories {
         System.out.println("a!!!");
 
         return new InstanceStepsFactory( configuration(),
-                 new BMI(), new Add() );
+                 new BMI() );
     }
 
 //    @Override

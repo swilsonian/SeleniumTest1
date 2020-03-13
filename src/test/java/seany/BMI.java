@@ -17,6 +17,7 @@ public class BMI {
     WebDriver driver = null;
 
 
+
     // Why isnt this being called?
     @BeforeScenario
     public void scenarioSetup() {
@@ -92,4 +93,66 @@ public class BMI {
     public void afterScenario (){
         System.out.println("SC END!!!");
     }
+
+
+
+
+    // ADD STUFF
+
+
+    private char sign;
+    private String a;
+    private String b;
+    private String result;
+
+    @Given("a adder website")
+    public void givenACalculatorClassWithTheOperationSignAssign() {
+
+        String url = "file:///" + System.getProperty("user.dir") + "/src/main/resources/pages/add.html";
+
+
+        System.out.println("Opening... " + url);
+        driver.get(url);
+    }
+
+    @When("I give the first number as <number1>")
+    public void whenIGiveTheFirstNumberAsnumber1(@Named("number1") String a) {
+        this.a = a;
+
+        driver.manage().window();
+        WebElement heightCMS = driver.findElement(By.
+                id("num1"));
+        heightCMS.sendKeys(a);
+    }
+
+    @When("I give the second number as <number2>")
+    public void whenIGiveTheSecondNumberAsnumber2(@Named("number2") String b) {
+        this.b = b;
+
+        driver.manage().window();
+        WebElement heightCMS = driver.findElement(By.
+                id("num2"));
+        heightCMS.sendKeys(b);
+    }
+
+    @When("I click on the Click button")
+    public void IClickOnTheClickButton()
+    {
+        WebElement button = driver.findElement(By.id("click"));
+        button.click();
+    }
+
+
+    @Then("I should get the result as <result>")
+    public void thenIShouldGetTheResultAsresult(@Named("result") String result) {
+
+        WebElement bmi = driver.findElement(By.id("result"));
+
+        assertEquals(result,
+                bmi.getAttribute("innerHTML"));
+
+
+    }
+
+
 }

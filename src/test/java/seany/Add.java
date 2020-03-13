@@ -1,3 +1,5 @@
+// # IGNORE THIS FILE; NOT BEING USED ANYMORE
+// # ALL STEPS MOVED INTO BMI FILE.
 package seany;
 
 import org.jbehave.core.annotations.*;
