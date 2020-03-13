@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>stories.add</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+<div class="story">
+<h1></h1>
+<div class="path">stories/add.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">As a</span> user</div>
+<div class="element asA"><span class="keyword asA">I want to</span> perform a math op</div>
+<div class="element iWantTo"><span class="keyword iWantTo">So that</span> I can get the result of an op for two numbers</div>
+</div>
+<div class="beforeStorySteps">
+</div>
+<div class="scenario">
+<h2>Scenario: scenario Addition</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given a adder website</div>
+<div class="step">When I give the first number as &lt;number1&gt;</div>
+<div class="step">And I give the second number as &lt;number2&gt;</div>
+<div class="step">And I click on the Click button</div>
+<div class="step">Then I should get the result as &lt;result&gt;</div>
+<table>
+<thead>
+<tr>
+<th>number1</th><th>number2</th><th>result</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>3</td><td>9</td><td>12</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {number1=3, number2=9, result=12}</h3>
+<div class="step successful">Given a adder website</div>
+<div class="step successful">When I give the first number as <span class="step parameter">3</span></div>
+<div class="step successful">And I give the second number as <span class="step parameter">9</span></div>
+<div class="step successful">And I click on the Click button</div>
+<div class="step successful">Then I should get the result as <span class="step parameter">12</span></div>
+</div>
+</div>
+<div class="afterStorySteps">
+</div>
+</div>
+
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

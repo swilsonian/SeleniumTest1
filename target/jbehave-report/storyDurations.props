@@ -1,0 +1,7 @@
+#org.jbehave.core.embedder.StoryManager
+#Fri Mar 13 17:50:21 CST 2020
+threads=1
+total=33000
+threadAverage=33000
+stories/bmi.story=18000
+stories/add.story=15000

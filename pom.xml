@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>Calculator</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+<dependencies>
+
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.13</version>
+        <scope>test</scope>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>4.0.0-alpha-4</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.jbehave/jbehave-core -->
+    <dependency>
+        <groupId>org.jbehave</groupId>
+        <artifactId>jbehave-core</artifactId>
+        <version>4.6.2</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.jbehave.web/jbehave-web-selenium -->
+    <dependency>
+        <groupId>org.jbehave.web</groupId>
+        <artifactId>jbehave-web-selenium</artifactId>
+        <version>4.0-beta-1</version>
+    </dependency>
+
+
+    <!-- https://mvnrepository.com/artifact/org.jbehave.web/jbehave-web -->
+    <dependency>
+        <groupId>org.jbehave.web</groupId>
+        <artifactId>jbehave-web</artifactId>
+        <version>4.0-beta-1</version>
+        <type>pom</type>
+    </dependency>
+
+
+
+
+</dependencies>
+
+<build>
+    <plugins>
+        <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M4</version>
+        </plugin>
+
+<!--        <plugin>-->
+<!--            <groupId>org.jbehave</groupId>-->
+<!--            <artifactId>jbehave-maven-plugin</artifactId>-->
+<!--            <version>4.6.2</version>-->
+<!--            <configuration>-->
+<!--                <scope>test</scope>-->
+<!--            </configuration>-->
+<!--            <executions>-->
+<!--                <execution>-->
+<!--                    <id>unpack-view-resources</id>-->
+<!--                    <phase>generate-resources</phase>-->
+<!--                    <goals>-->
+<!--                        <goal>unpack-view-resources</goal>-->
+<!--                    </goals>-->
+<!--                </execution>-->
+<!--                <execution>-->
+<!--                    <id>run-stories-as-embeddables</id>-->
+<!--                    <phase>integration-test</phase>-->
+<!--                    <configuration>-->
+<!--                        <scope>test</scope>-->
+<!--                        <includes>-->
+<!--                            <include>com/mycompany/myproject/test/behavior/steps/*.java</include>-->
+<!--                        </includes>-->
+<!--                        <systemProperties>-->
+<!--                            <property>-->
+<!--                                <name>java.awt.headless</name>-->
+<!--                                <value>true</value>-->
+<!--                            </property>-->
+<!--                        </systemProperties>-->
+<!--                    </configuration>-->
+<!--                    <goals>-->
+<!--                        <goal>run-stories-as-embeddables</goal>-->
+<!--                    </goals>-->
+<!--                </execution>-->
+<!--            </executions>-->
+<!--            <dependencies>-->
+<!--                <dependency>-->
+<!--                    <groupId>log4j</groupId>-->
+<!--                    <artifactId>log4j</artifactId>-->
+<!--                    <version>1.2.17</version>-->
+<!--                    <scope>compile</scope>-->
+<!--                </dependency>-->
+<!--            </dependencies>-->
+<!--        </plugin>-->
+
+    </plugins>
+</build>
+</project>
